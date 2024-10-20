@@ -21,13 +21,13 @@
 <html lang="en">
 
     <?php include('header.php');   ?>
-    <h4 class="center grey-text">Available Pizzas!</h4>
+    <h4 class="center red-text text-darken-3">Available Pizzas!</h4>
     <div class="container">
         <div class="row">
             <?php foreach($pizzas as $pizza): ?>
                 <div class="col s6 md3">       
-                    <div class="card z-depth-0">
-                        <img src="pizza.webp" alt="" class="pizza">
+                    <div class="card">
+                        <img src="pizza.avif" alt="" class="pizza">
                         <div class="card-content center">
                             <h6><?php echo htmlspecialchars($pizza['title']);   ?></h6>
                             <div>
