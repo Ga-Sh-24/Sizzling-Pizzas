@@ -91,17 +91,17 @@
 <html lang="en">
 
     <?php include('header.php');   ?>
-    <section class="container grey-text">
-        <h4 class="center">Add your Pizza</h4>
-        <form action="add.php" class="white" method="POST">      <!--GET request sends the user data into the URl server of the page/file that we specify in the action attribute and then, it looks for the php defined at the top of this page whether we have to do something with this data or not-->
+    <section class="container grey-text text-darken-2">
+        <h4 class="center red-text text-darken-3">Add your Pizza</h4>
+        <form action="add.php" class="white" method="POST">      <!--GET request sends the user data into the URL server of the page/file that we specify in the action attribute and then, it looks for the php defined at the top of this page whether we have to do something with this data or not-->
         <!-- POST request does not send the user data into the URL. That's why it is more useful than the GET request -->
-            <label for="email">Your Email:</label>
+            <label for="email"><strong>Your Email:</strong></label>
             <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>">
             <div class="red-text"><?php echo $errors['email']; ?></div>
-            <label for="title">Pizza Title:</label>
+            <label for="title"><strong>Pizza Title:</strong></label>
             <input type="text" name="title" value="<?php echo htmlspecialchars($title); ?>">
             <div class="red-text"><?php echo $errors['title']; ?></div>
-            <label for="ingredients">Ingredients (comma separated):</label>
+            <label for="ingredients"><strong>Ingredients (comma separated):</strong></label>
             <input type="text" name="ingredients" value="<?php echo htmlspecialchars($ingredients); ?>">
             <div class="red-text"><?php echo $errors['ingredients']; ?></div>
             <div class="center">
